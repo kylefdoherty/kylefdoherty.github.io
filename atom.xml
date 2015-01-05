@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[T-Shaped Developer]]></title>
+  <title><![CDATA[T-Shaped]]></title>
   <link href="http://kylefdoherty.github.io/atom.xml" rel="self"/>
   <link href="http://kylefdoherty.github.io/"/>
-  <updated>2015-01-04T23:21:55-05:00</updated>
+  <updated>2015-01-04T23:31:33-05:00</updated>
   <id>http://kylefdoherty.github.io/</id>
   <author>
     <name><![CDATA[Kyle Doherty]]></name>
@@ -18,16 +18,16 @@
     <link href="http://kylefdoherty.github.io/blog/2015/01/04/what-i-learned-after-3-months-as-a-junior-developer/"/>
     <updated>2015-01-04T23:19:15-05:00</updated>
     <id>http://kylefdoherty.github.io/blog/2015/01/04/what-i-learned-after-3-months-as-a-junior-developer</id>
-    <content type="html"><![CDATA[<p>I just finished my 3 month ‘Software Engineering Apprenticeship’ and am a full time Junior Software Engineer at AlphaSights now.  I absolutely couldn’t be happier with my decision to switch careers and go to The Flatiron School to become a developer.  Big shoutout to Flatiron School for helping me learn to program and start a new career that I LOVE!</p>
+    <content type="html"><![CDATA[<p>I just finished my 3 month ‘Software Engineering Apprenticeship’ and am a full time Junior Software Engineer at AlphaSights now.  I absolutely couldn’t be happier with my decision to switch careers and go to <a href="http://flatironschool.com/">The Flatiron School</a> to become a developer.  Big shoutout to Flatiron School for helping me learn to program and start a new career that I LOVE!</p>
 
 <p>While my aboutface on the career front has been a massive success, the jump from programming bootcamp grad to professional developer was tough.  Tougher than I thought it’d be at least.  This is also the number one question I get from dozens of bootcamp students at schools like Flatiron and Dev Bootcamp here in New York.  To which I reply, “honestly it’s tough, but it’s also fun if you’ve got the right people around you and the right mindset.” Then I rattle off all the reasons the transition is hard and how I have and continue to overcome them with the help of my teammates.</p>
 
 <h2>Challenges of Going from Novice Programmer to Pro</h2>
 
 <ul>
-<li><p>So Much to Learn - I felt like I knew a lot at the end of Flatiron School, and considering I came in with no programming background, I learned a massive amount in 3 months.  With that said, as soon as you start at a company as a full time developer it becomes painfully obvious how much you don’t know yet.  You know you need to learn/improve 10 different things, but where do you begin?  Which are the most important?</p></li>
-<li><p>Feel like a Beginner Again - back when you first started learning to program you felt dumb all the time, but this became less and less until you were able to knock out tiny apps no problem.  Then you get thrown into these massive apps, with much more complex models, associations, and code and it’s like learning to program all over again.  Feeling like a beginner sucks (at least in my opinion) but it’s also great because you have so much to learn and everything is new and exciting.</p></li>
-<li><p>Apps &amp; Code are Much Bigger/Complex - the apps you’ll be working on are much bigger and complex than what you’re used to.  This can be pretty intimidating and can make you feel overwhelmed at times, at least it did for me.  When you add this with the other two points above it can be a recipe for some mentally tough days, where I thought to myself, “Man I suck!”</p></li>
+<li><p><strong>So Much to Learn</strong> - I felt like I knew a lot at the end of Flatiron School, and considering I came in with no programming background, I learned a massive amount in 3 months.  With that said, as soon as you start at a company as a full time developer it becomes painfully obvious how much you don’t know yet.  You know you need to learn/improve 10 different things, but where do you begin?  Which are the most important?</p></li>
+<li><p><strong>Feel like a Beginner Again</strong> - back when you first started learning to program you felt dumb all the time, but this became less and less until you were able to knock out tiny apps no problem.  Then you get thrown into these massive apps, with much more complex models, associations, and code and it’s like learning to program all over again.  Feeling like a beginner sucks (at least in my opinion) but it’s also great because you have so much to learn and everything is new and exciting.</p></li>
+<li><p><strong>Apps &amp; Code are Much Bigger/Complex</strong> - the apps you’ll be working on are much bigger and complex than what you’re used to.  This can be pretty intimidating and can make you feel overwhelmed at times, at least it did for me.  When you add this with the other two points above it can be a recipe for some mentally tough days, where I thought to myself, “Man I suck!”</p></li>
 </ul>
 
 
