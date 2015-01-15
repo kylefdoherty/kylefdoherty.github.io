@@ -4,7 +4,7 @@
   <title><![CDATA[T-Shaped]]></title>
   <link href="http://kylefdoherty.github.io/atom.xml" rel="self"/>
   <link href="http://kylefdoherty.github.io/"/>
-  <updated>2015-01-15T01:33:53-05:00</updated>
+  <updated>2015-01-15T01:34:54-05:00</updated>
   <id>http://kylefdoherty.github.io/</id>
   <author>
     <name><![CDATA[Kyle Doherty]]></name>
@@ -74,8 +74,6 @@
 <p>In my last few weeks at Flatiron I learned and practiced basic unit testing with RSpec in my spare time.  With only a few hours of practice I got to the point where I could TDD simple problems like the first few on Project Euler.  This was huge for me when completing my code challenge for AlphaSights because it greatly improved my code quality.  It also set me apart from other applicants because most new programmers don&rsquo;t write tests.</p>
 
 <p>If setting you apart from other applicants isn&rsquo;t incentive enough, realize you&rsquo;re going to need to learn testing for any decent rails job, so might as well start learning.</p>
-
-<p><strong>TIP:</strong> If you have an offer from a company that doesn’t write tests, take the other offer you have. If you don’t have another offer, take the crappy no testing job because that job is better than no job.  After getting hired immediately start looking for a new one that does test!</p>
 
 <h3>How I learned Basic Unit Testing</h3>
 
