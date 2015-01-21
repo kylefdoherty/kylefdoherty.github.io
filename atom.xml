@@ -4,7 +4,7 @@
   <title><![CDATA[T-Shaped]]></title>
   <link href="http://kylefdoherty.github.io/atom.xml" rel="self"/>
   <link href="http://kylefdoherty.github.io/"/>
-  <updated>2015-01-15T08:35:26-05:00</updated>
+  <updated>2015-01-20T19:55:48-05:00</updated>
   <id>http://kylefdoherty.github.io/</id>
   <author>
     <name><![CDATA[Kyle Doherty]]></name>
@@ -12,6 +12,86 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to Get a Job After Graduating from a Programming Bootcamp]]></title>
+    <link href="http://kylefdoherty.github.io/blog/2015/01/15/how-to-get-a-job-after-graduating-from-a-programming-bootcamp/"/>
+    <updated>2015-01-15T12:55:15-05:00</updated>
+    <id>http://kylefdoherty.github.io/blog/2015/01/15/how-to-get-a-job-after-graduating-from-a-programming-bootcamp</id>
+    <content type="html"><![CDATA[<p><strong>DISCLAIMER: This is just my opinion based on what got me a job and what my company looks for when we’re evaluating junior candidates.</strong></p>
+
+<p>In the past 5 months I’ve gone to bootcamp demo days, career fairs, and other recruiting events to help recruit more junior developers to <strong><a href="http://engineering.alphasights.com/">our team</a></strong>.  As a recent bootcamp grad myself, students ask me what they should focus on post graduation to help them get a job.</p>
+
+<p>The problem, I tell them, is you want to get a job ASAP and there is too much to learn and not enough time to do it in.  Generally people advise you to, review everything you’ve learned in the past 9-12 weeks, and then give you 30 other things study&hellip;oh yeah and go to meetups, ask people to coffee, write blog posts, and work on side projects.</p>
+
+<iframe src="//giphy.com/embed/10PcMWwtZSYk2k?html5=true" width="480" height="270" frameBorder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+
+<p><br>
+Assuming you don&rsquo;t have another 3 months to practice programming without making any money, don&rsquo;t do this.  You need to focus!</p>
+
+<h3>Below is my advice for what to focus on, which I think can be realistically achieved in 1 week i.e. your last week in your program or the week after you graduate.</h3>
+
+<h2>1. Figure Out What Type of Job You Want</h2>
+
+<p>Do you want to be a frontend developer and write JavaScript, are you interested in getting a rails job, or something else?  Whatever it is go review the fundamentals of that language or framework and make sure you know them.</p>
+
+<p><strong>Review Materials</strong></p>
+
+<ul>
+<li><a href="https://github.com/afeld/rails_interview_questions">Ruby and Rails Interview Questions</a></li>
+<li><a href="http://career.guru99.com/top-85-javascript-interview-questions/">Javascript Interview Questions</a></li>
+</ul>
+
+
+<p>These lists might look like a lot, but remember you should pick one or the other depending on what type of job you want.</p>
+
+<p>Also note, if you get a job in one language it doesn’t mean you can’t learn the other later and start working on those types of projects.  We use Ember at AlphaSights and I’m starting to learn Object Oriented JS. Once I have that down I&rsquo;ll tackle Ember and get on an Ember project.</p>
+
+<h2>2. SOLID Object Oriented Code</h2>
+
+<p>Understand what good OO code is and start practicing (I&rsquo;m still working on this).  Regardless of the language, if an applicant solves our code challenge using one big method, it’s an immediate deal breaker.</p>
+
+<p>Assuming you want a rails job I would read and watch the following resources in the given order and then apply what you learn to your code.  Hopefully a code challenge from a potential employer.</p>
+
+<ul>
+<li><p><strong><a href="http://robots.thoughtbot.com/sandi-metz-rules-for-developers">Sandi Metz’s Rules</a></strong> - learn these rules and try to follow them as best you can.</p></li>
+<li><p><strong><a href="https://www.youtube.com/watch?v=DC-pQPq0acs">Refactoring From Good to Great</a></strong> - this is a great talk!  All Ben&rsquo;s advice is super actionable and can be easily applied. In fact I&rsquo;m going to go re-watch this right now.</p></li>
+<li><p><strong><a href="http://www.confreaks.com/videos/240-goruco2009-solid-object-oriented-design">SOLID Object Oriented Design</a></strong> - Sandi Metz explains SOLID OO design principles.  I&rsquo;ve watched this a couple of times, took notes, and tried to apply it and you should too.</p></li>
+<li><p><strong><a href="https://www.youtube.com/watch?v=8bZh5LMaSmE">All the Little Things</a></strong> - another Sandi Metz talk.  This time she walks through applying SOLID principles to some code.</p></li>
+</ul>
+
+
+<p>For JavaScript, <a href="http://www.objectplayground.com/">ObjectPlayground</a> is a good resource for Object Oriented JS.  SOLID design principles will also be applicable.</p>
+
+<h2>3. Learn Basic Unit Testing</h2>
+
+<p>In my last few weeks at Flatiron I studied and practiced basic unit testing with RSpec, in my spare time.  With a several hours of practice I got to the point where I could TDD simple problems like the first few on Project Euler.  This greatly improved the quality of my code challenge for AlphaSights and set me apart from other applicants because most new programmers don&rsquo;t write tests.</p>
+
+<p>If setting you apart from other applicants isn&rsquo;t incentive enough, realize you&rsquo;re going to need to learn testing for any decent rails job, so might as well start learning.</p>
+
+<h3>How I learned Basic Unit Testing</h3>
+
+<p>Below are the simple steps I took to learn the basics of writing unit tests.  If you follow them you should become comfortable writing basic unit tests in 2-6 hours of study and practice.</p>
+
+<ul>
+<li><p><strong><a href="http://robots.thoughtbot.com/four-phase-test">4 phases of Testing</a></strong> - read Thoughtbot’s post on the 4 phases of testing.  This will help you understand the fundamentals of testing and how to write the actual tests.</p></li>
+<li><p><strong><a href="http://code.tutsplus.com/tutorials/ruby-for-newbies-testing-with-rspec--net-21297">Ruby For Newbies: Testing with RSpec</a></strong> - this post is a little old so you need to replace using a <code>before :each</code> block with let.  Read about that here, <a href="http://betterspecs.org/#let.">http://betterspecs.org/#let.</a></p></li>
+<li><p><strong><a href="https://projecteuler.net/problems">Practice on Euler Problems</a></strong> - take what you’ve learned from the first two blog posts and solve several Project Euler problems using TDD.  At this point you’ll be on your way to learning testing.</p></li>
+</ul>
+
+
+<h2>What About CS Interview Questions</h2>
+
+<p>In regards to CS interview questions like the ones you find on <a href="https://www.interviewcake.com/">Interview Cake</a>.  You may or may not need to know them.  I personally made a bet that any company I&rsquo;d be working for would care more about my code quality than my CS knowledge and that I could learn it on the job later.  My bet was right and I didn&rsquo;t get asked any of these types of questions.  This doesn&rsquo;t mean you won&rsquo;t so take this advice with a massive grain of salt and it least be aware of what things like Big O and link lists are.</p>
+
+<h2>That’s All Folks</h2>
+
+<p>That’s all I got.  In my opinion you should be able to complete everything I recommend in 5-10 days if you&rsquo;re doing nothing else but programming.</p>
+
+<p>Hopefully you’ve found this helpful.  Please let me know your thoughts on what you think programming bootcamp grads should be focusing on in their first few weeks post graduation.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[What I've Learned After 3 Months as a Junior Developer]]></title>
