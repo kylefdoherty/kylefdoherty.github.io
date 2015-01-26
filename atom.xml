@@ -4,7 +4,7 @@
   <title><![CDATA[T-Shaped]]></title>
   <link href="http://kylefdoherty.github.io/atom.xml" rel="self"/>
   <link href="http://kylefdoherty.github.io/"/>
-  <updated>2015-01-20T19:55:48-05:00</updated>
+  <updated>2015-01-26T11:10:16-05:00</updated>
   <id>http://kylefdoherty.github.io/</id>
   <author>
     <name><![CDATA[Kyle Doherty]]></name>
@@ -98,16 +98,16 @@ Assuming you don&rsquo;t have another 3 months to practice programming without m
     <link href="http://kylefdoherty.github.io/blog/2015/01/04/what-i-learned-after-3-months-as-a-junior-developer/"/>
     <updated>2015-01-04T23:19:15-05:00</updated>
     <id>http://kylefdoherty.github.io/blog/2015/01/04/what-i-learned-after-3-months-as-a-junior-developer</id>
-    <content type="html"><![CDATA[<p>I just finished my 3 month ‘Software Engineering Apprenticeship’ and am a full time Junior Software Engineer at AlphaSights now.  I absolutely couldn’t be happier with my decision to switch careers and go to <a href="http://flatironschool.com/">The Flatiron School</a> to become a developer.  Big shoutout to Flatiron School for helping me learn to program and start a new career that I LOVE!</p>
+    <content type="html"><![CDATA[<p>I just finished my 3 month Software Engineering Apprenticeship and am a full time Junior Software Engineer at AlphaSights now.  I absolutely couldn’t be happier with my decision to switch careers and go to <a href="http://flatironschool.com/">The Flatiron School</a> to become a developer.  Big shoutout to Flatiron School for helping me learn to program and start a new career that I LOVE!</p>
 
-<p>While my aboutface on the career front has been a massive success, the jump from programming bootcamp grad to professional developer was tough.  Tougher than I thought it’d be at least.  This is also the number one question I get from dozens of bootcamp students at schools like Flatiron and Dev Bootcamp here in New York.  To which I reply, “honestly it’s tough, but it’s also fun if you’ve got the right people around you and the right mindset.” Then I rattle off all the reasons the transition is hard and how I have and continue to overcome them with the help of my teammates.</p>
+<p>While my aboutface on the career front has been a massive success, the jump from programming bootcamp grad to professional developer was tough.  Tougher than I thought it’d be at least.  This is also the number one question I get from dozens of bootcamp students at schools like Flatiron and Dev Bootcamp here in New York.  To which I reply, “it’s tough, but also fun if you’ve got the right people around you and the right mindset.” Then I rattle off all the reasons the transition is hard and how I have and continue to overcome them with the help of my teammates.</p>
 
 <h2>Challenges of Going from Novice Programmer to Pro</h2>
 
 <ul>
-<li><p><strong>So Much to Learn</strong> - I felt like I knew a lot at the end of Flatiron School, and considering I came in with no programming background, I learned a massive amount in 3 months.  With that said, as soon as you start at a company as a full time developer it becomes painfully obvious how much you don’t know yet.  You know you need to learn/improve 10 different things, but where do you begin?  Which are the most important?</p></li>
-<li><p><strong>Feel like a Beginner Again</strong> - back when you first started learning to program you felt dumb all the time, but this became less and less until you were able to knock out tiny apps no problem.  Then you get thrown into these massive apps, with much more complex models, associations, and code and it’s like learning to program all over again.  Feeling like a beginner sucks (at least in my opinion) but it’s also great because you have so much to learn and everything is new and exciting.</p></li>
-<li><p><strong>Apps &amp; Code are Much Bigger/Complex</strong> - the apps you’ll be working on are much bigger and complex than what you’re used to.  This can be pretty intimidating and can make you feel overwhelmed at times, at least it did for me.  When you add this with the other two points above it can be a recipe for some mentally tough days, where I thought to myself, “Man I suck!”</p></li>
+<li><p><strong>So Much to Learn</strong> - I felt like I knew a lot at the end of Flatiron School, and considering I came in with no programming background, I learned a massive amount in 3 months.  With that said, as soon as you start at a company as a full time developer it becomes painfully obvious how much you still don’t know.  You know you need to learn/improve in 10 different areas, but where do you begin?  Which are the most important?</p></li>
+<li><p><strong>Feel like a Beginner Again</strong> - back when you first started learning to program you felt dumb all the time, but with practice this subsided and eventually you could knock out tiny apps no problem.  Then you start your job, get thrown into massive apps (relatively speaking), and it feels like learning to program all over again.  Feeling like a beginner sucks (at least in my opinion) but you just have to embrace and get excited that you have so much to learn.</p></li>
+<li><p><strong>Apps &amp; Code are Much Bigger/Complex</strong> - this can be pretty intimidating and can make you feel overwhelmed at times, at least it did for me.  When you add this with the other two points above it can be a recipe for some mentally tough days, where I thought to myself, “Man I suck!”</p></li>
 </ul>
 
 
@@ -117,26 +117,26 @@ Assuming you don&rsquo;t have another 3 months to practice programming without m
 
 <h3>1. Get a Mentor(s)</h3>
 
-<p>One of the best things about my apprenticeship was being assigned a formal mentor who I don’t work with directly who I meet with weekly.  This has been great because I can talk to him about what’s going well and what isn’t and get advice from him.  In addition to that our entire software team all seem to be very willing to teach younger programmers.</p>
+<p>One of the best things about my apprenticeship was being assigned a formal mentor who I don’t work with directly and meet with weekly.  This has been great because I can talk to him about what’s going well and what isn’t, and get advice.  Additionally, our entire software team are all very keen to teach younger programmers.</p>
 
-<p>If you’re new job doesn’t assign you a formal mentor I’d suggest talking to your boss about doing just that.  If that doesn’t work I would pick the people on my team I respect that most and befriend them so you feel comfortable going to them with problems both technical and non technical.</p>
+<p>If you’re new job doesn’t assign you a formal mentor I’d suggest talking to your boss about doing just that.  If that doesn’t work I&rsquo;d pick the people on your team you respect most and befriend them.  This way you&rsquo;ll feel comfortable going to them with both technical and non technical problems.</p>
 
 <h3>2. Define Personal Goals</h3>
 
-<p>As mentioned one of the biggest problems for a new programmer is there are a million things to learn and/or get better at and just not enough time in the day to do them all.  You need to prioritize what these are.  One thing that helped me was defining explicit technical goals to work on for my apprenticeship.  With the help of my mentor Damon, we decided that the most important thing for me to master was end to end testing for Rails using Rspec and Capybara and that I would achieve this goal by writing test suites for the apps I was working on.  This was great because it the goals were posted to our internal version of discourse so the entire team knew what my goals were and meant I now knew what technical skills to focus on.</p>
+<p>As mentioned one of the biggest struggles for a new programmer is there are a million things to learn and/or get better at and just not enough time in the day to do them all.  You need to prioritize what these are.  One thing that helped me was defining explicit technical goals to work on for my apprenticeship.  With the help of my mentor <a href="https://twitter.com/daemonsy">Damon</a>, we decided the most important thing for me to master was end to end testing for Rails using Rspec and Capybara and that I would achieve this goal by writing test suites for the apps I was working on.  This was great because the goals were posted to our internal version of discourse so the entire team knew what they were and meant I had a roadmap for what to focus on.</p>
 
-<p>You can do the same thing at your job.  Come up with what your goals are for the first three months at you new job and run them by your team and boss.  This way expectations are set and everyone will know if you’ve met your goals or not.</p>
+<p>You can do the same thing at your job.  Come up with what your goals are for the first three months and run them by your team and boss.  This way expectations are set and everyone will know if you’ve met your goals or not.</p>
 
 <h3>3. Close Read Your Code Base</h3>
 
-<p>In the first month of my apprenticeship I had a ton of trouble working on some of our apps because they were massive in comparison to what I’d been used to working on.  In addition I became so caught up in proving I was a good programming and could get things done quickly that I would just start hacking away without fully understanding the code base I was working with, the problem, or the steps I was going to take to solve it.  This obviously bit me a couple of times, causing me to become overwhelmed.</p>
+<p>In the first month of my apprenticeship I had a ton of trouble working on some of our apps because they were huge compared to what I’d seen before.  In addition I became so caught up in proving I was a good programmer and could get things done quickly that I would start hacking away without fully understanding the code base I was working with, the problem, or the steps I was going to take to solve it.  This obviously bit me a couple of times, causing me to become overwhelmed.</p>
 
 <p>You can avoid this by:</p>
 
 <ul>
-<li><p>Close reading the code base you’re assigned to.  Invest the time in reading through the code carefully and understanding how the models, associations and general flow of the program works.  You may have to only focus on a section of the app if it’s huge but even this will pay dividends and save you lots of time in the long run.</p></li>
-<li><p>Pair with more senior developers as much as you can in your first few months.  They’ll help you understand the legacy apps you’re working on and any difficult and/or quirky code.  This was only possible on occasion my first few months as an apprentice but now I pair on a much more frequent basis and can tell it’s helping my learn at a much faster pace than before.</p></li>
-<li><p>Read your error messages carefully. I know this seems obvious but there were times when I didn’t do this because I had become overwhelmed and frustrated, and had I only taken a deep breath and read the error message carefully I would have figured it out.</p></li>
+<li><p><strong>Close reading the code base you’re assigned to</strong> -  Invest the time in reading through the code carefully and understanding how the models, associations, and general flow of the program works.  You may have to only focus on a section of the app if it’s large but even this will pay dividends and save you lots of time in the long run.</p></li>
+<li><p><strong>Pair with more senior developers as much as you can in your first few months</strong> -  They’ll help you understand the legacy apps you’re working on and any difficult and/or quirky code.  This was only possible on occasion my first few months as an apprentice but now I pair on a much more frequent basis and can tell it’s helping me learn at a much faster pace than before.</p></li>
+<li><p><strong>Read your error messages carefully</strong> - I know this seems obvious but there were times when I didn’t do this because I had become overwhelmed and frustrated. Had I taken a deep breath and read the error message carefully I would have figured it out.</p></li>
 </ul>
 
 
@@ -144,19 +144,19 @@ Assuming you don&rsquo;t have another 3 months to practice programming without m
 
 <p>I heard a number of times while at Flatiron School that this is hard to learn when you are a junior developer because you always want to prove you can figure things out on your own.  This was definitely the case for me until my mentor Damon gave me a good framework for deciding when it’s appropriate to ask for help.</p>
 
-<p>Damon pointed out that if you’ve been grappling with a problem for 30-45 minutes and have exhausted all avenues for finding a solution, then you SHOULD ask for help.  The reason why boils down to simple economics.  Your more experienced co-workers can probably help you solve the problem in less than 10 minutes, meaning they’re trading 10 minutes of their time for possibly hours of yours.  Although at this point they’re far more productive than you they hopefully aren’t hours more productive.  Thus, asking for help and distracting a teammate for a few minutes just saved your team hours and is a huge win.  As long as you aren’t distracting people all the time, and can show you’ve explored possible solutions on your own, your co workers should be happy to offer up help.</p>
+<p>Damon pointed out that if you’ve been grappling with a problem for 30-45 minutes and have exhausted all avenues for finding a solution, then you SHOULD ask for help.  The reason why boils down to simple economics.  Your more experienced co-workers can probably help you solve the problem in less than 10 minutes, meaning they’re trading 10 minutes of their time for possibly hours of yours.  Although at this point they’re far more productive than you they hopefully aren’t hours more productive.  Thus, asking for help and distracting a teammate for a few minutes just saved your team hours and is a big win.  As long as you aren’t distracting people all the time, and can show you’ve explored possible solutions on your own, your co workers should be happy to offer up help.</p>
 
 <h3>5. Is Your Code Creating Value</h3>
 
 <p>This is something I’ve heard from nearly all my teammates and think it’s especially important for junior devs to learn early. It’s easy to want to use overly complex and fancy solutions to simple problems as a junior, resulting in you wasting a ton of time and holding your team up.</p>
 
-<p>Due to your inexperience it can be hard to make these judgement calls at times. This is another example of when it’s a good time to ask for help.  I often run my idea for how to solve a specific problem by someone more senior on my project team to see what they think.  This way they can tell me if it sounds reasonable or not.  This can be done in your morning stand up and has saved me from taking a wrong path and wasting a bunch of time in several instances.  As you get more experience you’ll get better at making these calls on your own.</p>
+<p>Due to your inexperience it can be difficult to make these judgement calls at times. This is another example of when it’s a good time to ask for help.  I often run my idea for how to solve a specific problem by someone more senior to see what they think.  This way they can tell me if it sounds reasonable or not.  This can be done in your morning stand up or right after and has saved me from wasting a bunch of time in several instances.  As you get more experience you’ll get better at making these calls on your own.</p>
 
 <h3>6. Scaffold Spikes</h3>
 
-<p>This is a term I made up just now, but is something I’ve used several times in the last two months.   At the beginning of new iterations I’ve noted what we’re going to implement that I know little or nothing about.  Then at home I’ll quickly scaffold a bare bones rails app and implement the feature.  This is great because it let’s me focus on what I need to learn instead of the intricacies of our legacy code.</p>
+<p>This is a term I made up just now because I didn&rsquo;t know what to call it. It&rsquo;s something I’ve used several times in the last two months and has been very helpful for me.   At the beginning of new iterations I’ve noted what we’re going to implement that I know little or nothing about.  Then at home I’ll quickly scaffold a bare bones rails app and implement the feature.  This is great because it let’s me focus on what I need to learn instead of the intricacies of our legacy code.</p>
 
-<p>A good example is several weeks ago when we were thinking of using a state machine to handle project status for an app.  I’d never done anything with state machines and wanted to learn what they were and how to implement them.  Playing with them at home let me take my time without feeling like I was slowing our team down.  Additionally the next day I knocked out the feature in a fraction of the time it would have taken me, only to realize a state machine wasn’t going to work due to way our app works.  Since it hadn’t taken me too long to figure this out it wasn’t a big deal that I had to scrap my code and I still got to learn about state machines.</p>
+<p>A good example is several weeks ago when we were thinking of using a state machine to handle project status for an app.  I’d never done anything with state machines and wanted to learn what they were and how to implement them.  Playing with them at home let me take my time without feeling like I was slowing our team down.  Additionally the next day I knocked out the feature in a fraction of the time it would have taken me, only to realize a state machine wasn’t going to work due to way our app works.  However, since it hadn’t taken me too long to figure this out it wasn’t a big deal that I had to scrap my code and go a different route.</p>
 
 <h3>7. Find Other ways to contribute</h3>
 
