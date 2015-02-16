@@ -1,0 +1,393 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Dating JavaScript: Getting to Know Functions - T-Shaped</title>
+  <meta name="author" content="Kyle Doherty">
+
+  
+  <meta name="description" content="I&rsquo;ve been dabbling with JavaScript for a while now but still don&rsquo;t have a solid grasp of the language. In an attempt to level up and &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://kylefdoherty.github.io/blog/2015/02/15/dating-javascript-getting-to-know-functions">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="T-Shaped" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans|Roboto:400,300' rel='stylesheet' type='text/css'>
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-47629978-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+
+<body>
+	<div class="container">
+		<aside class="left">
+			<div class="inner-left">
+				<header>
+					<img src="http://www.gravatar.com/avatar/5ed83a11db84bd9b22dd34d8f72ebed4?s=200" alt="Gravatar of Kyle Doherty " title="Gravatar of Kyle Doherty" class="profilepic" />
+<hgroup>
+  <h1><a href="/">T-Shaped</a></h1>
+  
+    <h2 class="subtitle">Working on becoming a T-Shaped Developer</h2>
+   
+</hgroup>
+
+
+				</header>
+				<footer>
+					<p>
+	
+		<a href="http://github.com/kylefdoherty" class="btn btn-dark">GitHub</a>
+	
+	
+		<a href="http://twitter.com/kylefdoherty" class="btn btn-dark">Twitter</a>
+	
+</p>
+				</footer>
+			</div>
+		</aside>
+    	<section class="right">
+    		<div class="inner-right">
+    			<div id="posts">
+    			  	<article class="post">
+    
+  <header>
+    
+      <h1 class="entry-title">Dating JavaScript: Getting to Know Functions</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+<time class='entry-date' datetime='2015-02-15T02:05:25-05:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>15</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I&rsquo;ve been dabbling with JavaScript for a while now but still don&rsquo;t have a solid grasp of the language.  In an attempt to level up and start writing better JS I plan to write posts about fundamental JS concepts starting with Functions.</p>
+
+<p>The style of these posts will be more like detailed notes than blog posts. Thus they probably won&rsquo;t be helpful if you don&rsquo;t know anything about JavaScript.  If that&rsquo;s the case I recommend starting with <a href="http://www.codecademy.com/en/tracks/javascript">Codecademy&rsquo;s JS Track</a>.</p>
+
+<p>Finally, before I dive into the basics of functions I need to give credit where credit is due.  For these posts, I’ll be perpending the title with “Dating JavaScript”.  Recently my coworker and mentor, <a href="https://twitter.com/daemonsy">Damon Aw</a>, did a short JS <a href="https://github.com/daemonsy/dating_javascript">training</a>, with the same name. I think it’s a great way to describe learning a new language, especially one as quirky as JavaScript and so&hellip; I&rsquo;m stealing it.</p>
+
+<h2>Why Start With Functions</h2>
+
+<p>Functions are an extremely important and powerful part of the language, or as Douglas Crawford puts it in his book, <em>JavaScript: The Good Parts</em>, &ldquo;Functions are the fundamental modular unit in JavaScript. They are used for code reuse, information hiding, and composition.” I’ve also read that if you want to be good at JavaScript you need a deep understanding of functions.  Thus they seem like a good place to start.</p>
+
+<h2>Anatomy of JS Functions</h2>
+
+<p><img src="/images/js_function_anatomy.png" alt="JS Function Anatomy" /></p>
+
+<ol>
+<li><strong>Function Keyword</strong> - this simply let&rsquo;s you know the object is a function.</li>
+<li><strong>Function Name</strong> - a function name is optional.  If a function does not have a name, as is the case when using function expressions (see below), it&rsquo;s called an anonymous function. Function names can also be used by the function to call itself recursively and are used by debuggers and dev tools to ID the function.</li>
+<li><strong>Function Parameters</strong> - parameters appear in between parenthesis and are separated by commas.  Once inside the function the parameters are stored as variables.</li>
+<li><strong>Function Statement</strong> - a set of statements that make up the body of the function.</li>
+</ol>
+
+
+<h2>Two Forms of JavaScript Functions</h2>
+
+<p>There are two forms of function literals that are very similar but differ in small but important ways.</p>
+
+<h3>1. Function Declarations - Function keyword followed by the name</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">function</span> <span class="nx">sayFullName</span><span class="p">(</span><span class="nx">firstName</span><span class="p">,</span> <span class="nx">lastName</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fisrstName</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="nx">lastName</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">sayFullName</span><span class="p">(</span><span class="s2">&quot;Kyle&quot;</span><span class="p">,</span> <span class="s2">&quot;Doherty&quot;</span><span class="p">);</span> <span class="c1">// Kyle Doherty</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>Note:</strong> function declarations are hoisted to the top of the context, meaning it doesn&rsquo;t matter when the function is defined because the program knows about it as soon as it&rsquo;s ran. Read more about <a href="http://bit.ly/1Ec0d5R">hoisting here</a> or watch the video below.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sw49K4pxHCU" frameborder="0" allowfullscreen></iframe>
+
+
+<h3>2. Function Expressions - sets the function to a variable and are not hoisted.</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">multiplication</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="err">﻿</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">x</span> <span class="o">*</span> <span class="nx">y</span>
+</span><span class='line'><span class="p">};</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">multiplication</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span> <span class="c1">// 50</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Parameters</h2>
+
+<p>JS functions don&rsquo;t care how many parameters are passed to them. This means they won&rsquo;t throw an error regardless of how many params are sent.  However, while they don&rsquo;t care they do know how many params they&rsquo;re &ldquo;able&rdquo; to take through their length property.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">function</span> <span class="nx">oneArg</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">oneArg</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span> <span class="c1">// 1</span>
+</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">oneArg</span><span class="p">(</span><span class="s2">&quot;Hi&quot;</span><span class="p">));</span> <span class="c1">// Hi</span>
+</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">oneArg</span><span class="p">(</span><span class="s2">&quot;Hola&quot;</span><span class="p">,</span> <span class="s2">&quot;a second params&quot;</span><span class="p">,</span> <span class="s2">&quot;and a third&quot;</span><span class="p">));</span> <span class="c1">// Hola</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Above you can see length returns 1 because this function only takes a single param.  Yet, if you pass in additional params no error occurs and the function simply ignores the extras.</p>
+
+<h3>How Params are Stored</h3>
+
+<p>The names of the params are stored as variables inside the function.  In addition to the parameters passed into the function it has two bonus parameters: <code>this</code> and <code>arguments</code>. <code>This</code> is beyond the scope of this post so don&rsquo;t worry about it now.  <code>Arguments</code> is an array like structure that contains all the parameters passed into the function.  Just like an array it can store any number of values that are referenced by indices (0, 1, 2, etc.), and has a length property stating how many values are present.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">function</span> <span class="nx">noArgs</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>   <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arguments</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">noArgs</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>  <span class="c1">// 0</span>
+</span><span class='line'><span class="nx">noArgs</span><span class="p">(</span><span class="s2">&quot;hi&quot;</span><span class="p">);</span>  <span class="c1">// hi</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>In this example the function takes no params, but can still access any parameters passed into it through its <code>arguments</code> object.  Here it&rsquo;s accessing the first parameter in the <code>arguments</code> object in the same way you&rsquo;d get the first element in an array.</p>
+
+<p>This is sort of weird/confusing and thus generally not done. Normally you&rsquo;d have a set number of params the function expects and only use those.</p>
+
+<h2>Sometimes It&rsquo;s a Good Thing</h2>
+
+<p>However, the ability to take any number of arguments can prove useful at times.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">function</span> <span class="nx">sum</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">length</span> <span class="o">=</span> <span class="nx">arguments</span><span class="p">.</span><span class="nx">length</span>
+</span><span class='line'>      <span class="c1">// number of parameters sent in to the function</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">while</span> <span class="p">(</span><span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">length</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">result</span> <span class="o">+=</span> <span class="nx">arguments</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+</span><span class='line'>    <span class="nx">i</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">return</span> <span class="nx">result</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">sum</span><span class="p">());</span> <span class="c1">// 0</span>
+</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">sum</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">));</span> <span class="c1">// 4</span>
+</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">sum</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">));</span> <span class="c1">// 25</span>
+</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">sum</span><span class="p">(</span><span class="mi">50</span><span class="p">));</span> <span class="c1">// 50</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Using the arguments object and a while loop the function is able to sum all the parameters given to it regardless of how many are sent it.</p>
+
+<h2>Function Overloading</h2>
+
+<p>Function overloading is a concept in some OO languages where you can create two functions with the same name but different implementations.  The program would then choose which one to use based on the number of params that were sent to the function.</p>
+
+<p>Since JS functions can accept any number of params you can&rsquo;t do this.  If you define two methods with the same name the one that was defined last effectively overwrites the first one you defined.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">function</span> <span class="nx">sayHi</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hi&quot;</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">function</span> <span class="nx">sayHi</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello!&quot;</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">sayHi</span><span class="p">();</span>  <span class="c1">// Hello!</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Here you can see the second sayHi function overwrote the first one.</p>
+
+<p>The way to mimic function overloading is to use conditionals to react differently depending on what params are sent to the function.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">function</span> <span class="nx">saySomething</span><span class="p">(</span><span class="nx">stuff</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="nx">stuff</span> <span class="o">===</span> <span class="kc">undefined</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;You didn&#39;t say anything!&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">stuff</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">saySomething</span><span class="p">();</span> <span class="c1">// You didn&#39;t say anything!</span>
+</span></code></pre></td></tr></table></div></figure>
+
+</div>
+
+
+</article>
+
+
+        <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://kylefdoherty.github.io/blog/2015/02/15/dating-javascript-getting-to-know-functions/" data-via="kylefdoherty" data-counturl="http://kylefdoherty.github.io/blog/2015/02/15/dating-javascript-getting-to-know-functions/" >Tweet</a>
+  
+  
+  
+</div>
+
+
+
+
+<section id="comments">
+    <div id="disqus_thread"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+
+
+    			</div>
+    			<footer id="footer">
+    				<p class="credit">
+  Copyright &copy; 2015 - Kyle Doherty. Powered by <a href="http://octopress.org">Octopress</a>
+</p>
+
+
+    			</footer>
+    			
+
+<script type="text/javascript">
+      var disqus_shortname = 'learningprogrammingandstuff';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://kylefdoherty.github.io/blog/2015/02/15/dating-javascript-getting-to-know-functions/';
+        var disqus_url = 'http://kylefdoherty.github.io/blog/2015/02/15/dating-javascript-getting-to-know-functions/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans|Roboto:400,300' rel='stylesheet' type='text/css'>
+
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-47629978-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+
+
+    		</div>
+    	</section>
+  	</div>
+</body>
+</html>
