@@ -4,7 +4,7 @@
   <title><![CDATA[T-Shaped]]></title>
   <link href="http://kylefdoherty.github.io/atom.xml" rel="self"/>
   <link href="http://kylefdoherty.github.io/"/>
-  <updated>2015-02-16T18:00:30-05:00</updated>
+  <updated>2015-02-18T10:30:28-05:00</updated>
   <id>http://kylefdoherty.github.io/</id>
   <author>
     <name><![CDATA[Kyle Doherty]]></name>
@@ -18,7 +18,7 @@
     <link href="http://kylefdoherty.github.io/blog/2015/02/15/dating-javascript-getting-to-know-functions/"/>
     <updated>2015-02-15T02:05:25-05:00</updated>
     <id>http://kylefdoherty.github.io/blog/2015/02/15/dating-javascript-getting-to-know-functions</id>
-    <content type="html"><![CDATA[<p>I&rsquo;ve been dabbling with JavaScript for a while now but still don&rsquo;t have a solid grasp of the language.  In an attempt to level up and start writing better JS I plan to write posts about fundamental JS concepts starting with Functions.</p>
+    <content type="html"><![CDATA[<p>I&rsquo;ve been dabbling with JavaScript for a while now but still don&rsquo;t have a solid grasp of the language.  In an attempt to level up and start writing better JS I plan to write posts about fundamental JavaScript concepts starting with Functions.</p>
 
 <p>The style of these posts will be more like detailed notes than blog posts. Thus they probably won&rsquo;t be helpful if you don&rsquo;t know anything about JavaScript.  If that&rsquo;s the case I recommend starting with <a href="http://www.codecademy.com/en/tracks/javascript">Codecademy&rsquo;s JS Track</a>.</p>
 
@@ -26,9 +26,23 @@
 
 <h2>Why Start With Functions</h2>
 
-<p>Functions are an extremely important and powerful part of the language, or as Douglas Crawford puts it in his book, <em>JavaScript: The Good Parts</em>, &ldquo;Functions are the fundamental modular unit in JavaScript. They are used for code reuse, information hiding, and composition.” I’ve also read that if you want to be good at JavaScript you need a deep understanding of functions.  Thus they seem like a good place to start.</p>
+<p>Functions are an extremely important and powerful part of the language, or as Douglas Crawford puts it in his book, <em>JavaScript: The Good Parts</em>, &ldquo;Functions are the fundamental modular unit in JavaScript. They are used for code reuse, information hiding, and composition.&rdquo;</p>
 
-<h2>Anatomy of JS Functions</h2>
+<p>Or in the words of Nicholas C. Zakas in his book, <em>The Principles of Object-Oriented JavaScript</em>, &ldquo;You need a good grasp of functions to understand how object- oriented programming works in JavaScript. Because JavaScript has no concept of a class, functions and other objects are all you have to work with to achieve aggregation and inheritance.&rdquo;</p>
+
+<h2>Functions are Objects</h2>
+
+<p>The first thing you need to be aware of is that functions are objects in Javascript and thus can be used like any other object in the language.  Meaning you can:</p>
+
+<ul>
+<li>Assign them to variables</li>
+<li>Add them to objects as properties</li>
+<li>Pass them to functions</li>
+<li>Return them from functions</li>
+</ul>
+
+
+<h2>Anatomy of JavaScript Functions</h2>
 
 <p><img src="http://kylefdoherty.github.io/images/js_function_anatomy.png" alt="JS Function Anatomy" /></p>
 
@@ -81,7 +95,7 @@
 
 <h2>Parameters</h2>
 
-<p>JS functions don&rsquo;t care how many parameters are passed to them. This means they won&rsquo;t throw an error regardless of how many params are sent.  However, while they don&rsquo;t care they do know how many params they&rsquo;re &ldquo;able&rdquo; to take through their length property.</p>
+<p>Functions don&rsquo;t care how many parameters are passed to them. This means they won&rsquo;t throw an error regardless of how many params are sent.  However, while they don&rsquo;t care they do know how many params they&rsquo;re &ldquo;able&rdquo; to take through their length property.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -178,7 +192,7 @@
 
 <p>Function overloading is a concept in some OO languages where you can create two functions with the same name but different implementations.  The program would then choose which one to use based on the number of params that were sent to the function.</p>
 
-<p>Since JS functions can accept any number of params you can&rsquo;t do this.  If you define two methods with the same name the one that was defined last effectively overwrites the first one you defined.</p>
+<p>Since functions can accept any number of params you can&rsquo;t do this.  If you define two methods with the same name the one that was defined last effectively overwrites the first one you defined.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
